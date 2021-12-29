@@ -142,6 +142,19 @@ img {
     color: var(--accent-color);
 }
 
+.icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    align-self: baseline;
+}
+
+.auth-nav .link:hover .icon-email,
+.auth-nav .link:focus .icon-email{
+    fill: var(--accent-color);
+}
+
 /* -------------------------main--------------------------------- */
 .hero {
     background-color: var(--background-color-hero);
@@ -233,33 +246,6 @@ img {
     justify-content: center;
 }
 
-/* .feature-list-item::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    background-size: contain;
-    background-position: center;
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-} */
-/* 
-.feature-list-item:nth-child(1)::before {
-    background-image: url(../images/antenna.svg);   
-}
-
-.feature-list-item:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.feature-list-item:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.feature-list-item:nth-child(4)::before {
-    background-image: url(../images/astronaut.svg);
-} */
-
 .feature-text {
     line-height: 1.71;
     max-width: 270px;
@@ -277,8 +263,6 @@ img {
     margin-left: 30px;
     margin-bottom: 30px;
 }
-
-
 
 .working {
     padding-top: 0;
@@ -336,11 +320,49 @@ img {
     color: var(--title-text-color);
 }
 
+.team-p {
+    margin-bottom: 16px;
+}
+
 .team-item {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--primary-text-color);
+}
+
+.team-people {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.team-people-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--clients-link-color); 
+}
+.team-people-link:hover,
+.team-people-link:focus {
+    background-color: var(--accent-color);
+
+}
+
+.team-people-link:hover .team-people-icon,
+.team-people-link:focus .team-people-icon {
+    fill: var(--primary-white-color);
+}
+
+.team-people-icon {
+    display: flex;
+    fill: var(--clients-link-color);
 }
 
 /* --------------clients-------------- */
@@ -373,6 +395,7 @@ img {
     height: 92px;
     padding: 16px 32px;
 }
+
 .icon-clients {
     fill: var(--clients-link-color);
 }
@@ -381,7 +404,9 @@ img {
 .clients-link:focus {
     border-color: var(--accent-color);
 }
-.clients-link:hover .icon-clients {
+
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
     fill: var(--accent-color);
 } 
 
