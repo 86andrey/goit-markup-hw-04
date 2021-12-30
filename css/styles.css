@@ -94,7 +94,7 @@ img {
 .auth-tel a {
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;
+    display: flex;
 }
 
 .header-item:not(:last-child) {
@@ -141,6 +141,15 @@ img {
 .item-link:focus {
     color: var(--accent-color);
 }
+.auth-nav .email,
+.auth-nav .tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .icon-email {
     width: 16px;
@@ -150,8 +159,18 @@ img {
     align-self: baseline;
 }
 
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    align-self: baseline;
+}
+
 .auth-nav .link:hover .icon-email,
-.auth-nav .link:focus .icon-email{
+.auth-nav .link:focus .icon-email,
+.auth-nav .link:hover .icon-phone,
+.auth-nav .link:focus .icon-phone{
     fill: var(--accent-color);
 }
 
@@ -417,6 +436,10 @@ img {
     background-color: var(--background-color-hero);
 }
 
+.footer-all {
+    display: flex;
+}
+
 .footer-address {
     margin-top: 20px;
 }
@@ -437,6 +460,46 @@ img {
     color: var(--color-footer-link);
 }
 
+.footer-join {
+    margin-left: 70px;
+}
+.footer-join-text {   
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+.join-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+    height: 44px;
+}
+
+.footer-join-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-join-link:hover,
+.footer-join-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-join-icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--primary-white-color);
+}
 
 /* -------------------Стили для Portfolio------------------- */
 
