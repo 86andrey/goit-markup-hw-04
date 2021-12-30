@@ -368,10 +368,10 @@ img {
     justify-content: center;
     color: var(--clients-link-color); 
 }
+
 .team-people-link:hover,
 .team-people-link:focus {
     background-color: var(--accent-color);
-
 }
 
 .team-people-link:hover .team-people-icon,
@@ -456,6 +456,7 @@ img {
 .item-linki {
     color: var(--primary-white-color);
 }
+
 .item-link {
     color: var(--color-footer-link);
 }
@@ -463,6 +464,7 @@ img {
 .footer-join {
     margin-left: 70px;
 }
+
 .footer-join-text {   
     font-weight: bold;
     line-height: 1.14;
@@ -563,7 +565,6 @@ img {
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
-
 }
 
 .card-content {
